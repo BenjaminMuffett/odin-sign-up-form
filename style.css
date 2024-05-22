@@ -21,15 +21,8 @@ ol, ul {
 body {
     display: flex;
     flex-direction: row;
+    background-color: rgba(119, 136, 153, 0.05);
   }
-
-.roboto-slab-700 {
-    font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-  }  
-
 
 .background-image {
     background-image: url(/assets/Images/torigates.jpg);
@@ -59,11 +52,69 @@ body {
     width: 25%;
 }
 
-.text {
-    font-size: 50px;
+.label-text {
+    font-size: 40px;
     color: white;
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+}
+
+.form-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+    min-width: 65vw;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.form-body > div {
+    padding: 15px;
+}
+
+.head-copy {
+    text-align: left;
+    padding: 10px;
+    max-width: 75%;
+}
+
+.form > h2 {
+    margin-bottom: 10px;
+}
+
+.form {
+    font-size: 1.2rem;
+    width: 100%;
+    min-height: 30% ;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 7px rgba(128, 128, 128, 0.4);
+}
+
+.form input {
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+    height: 40px;
+    width: 15vw;
+    appearance: none;
+    font-size: 1.2em;
+}
+
+input, label {
+    display:block;
+    margin-right: 3vw;
+}
+
+.name-block,
+.contact-block,
+.password-block {
+    display: flex;
+    flex-direction: row;
 }
