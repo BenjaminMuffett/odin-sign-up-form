@@ -76,7 +76,7 @@ body {
 }
 
 .form-body > div {
-    padding: 20px 40px 20px 40px;
+    padding: 10px 20px 10px 20px;
 }
 
 .head-copy {
@@ -108,7 +108,7 @@ body {
 .form input {
     border: 2px solid #E5E7EB;
     border-radius: 5px;
-    height: 5vh;
+    height: 4vh;
     width: 17vw;
     appearance: none;
     font-size: 1em;
@@ -150,4 +150,24 @@ button {
 p > a {
     text-decoration: none;
     color: #fd885d;
+}
+
+input:focus {
+    border: 2px solid skyblue;
+    box-shadow: 2px 2px 3px skyblue;
+    outline: skyblue;
+}
+
+input[type='password']:invalid {
+    border: 1px solid rgba(255, 0, 0, 0.75);
+    box-shadow: 2px 2px 3px rgba(255, 0, 0, 0.75);
+}
+
+input[type='password']:invalid + div::after {
+    display: block;
+    max-width: 17vw;
+    color: red;
+    text-wrap: wrap;
+    content: '*Password does not contain one lowercase, one upper case, one number and is at least 6 digits long.';
+    font-size: 1vw;
 }

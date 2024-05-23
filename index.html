@@ -27,11 +27,11 @@
                 <div class="name-block">
                     <div>
                         <label for="fname">First Name</label>
-                        <input type="text" name="fname" id="fname" required aria-label="required">
+                        <input type="text" name="fname" id="fname" required aria-label="required" maxlength="20">
                     </div>
                     <div>
                         <label for="surname">Last Name</label>
-                        <input type="text" name="surname" id="surname" required aria-label="required">
+                        <input type="text" name="surname" id="surname" required aria-label="required" maxlength="20">
                     </div>
                 </div>
                 <div class="contact-block">
@@ -47,11 +47,13 @@
                 <div class="password-block">
                     <div>
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required aria-label="required">
+                        <input type="password" name="password" id="password" required aria-label="required" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$">
+                        <div></div>
                     </div>
                     <div>
                         <label for="con-pass">Confirm Password</label>
-                        <input type="password" name="con-pass" id="con-pass" required aria-label="required">
+                        <input type="password" name="con-pass" id="con-pass" required aria-label="required" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$">
+                        <div></div>
                     </div>
                 </div>
             </form>
